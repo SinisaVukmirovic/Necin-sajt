@@ -1,0 +1,410 @@
+body {
+	box-sizing: border-box;
+}
+
+nav.navbar {
+	background-color: #386c94;										/*darkblue*/
+	padding: 10px;
+	margin: 0;
+	border-bottom: 2px solid white;
+}
+
+nav.navbar div.navbar-header {
+	margin-left: 10%;
+}
+
+nav.navbar div.navbar-header a.navbar-brand {
+	font-size: 40px;
+	color: #dae7f1;
+}
+
+nav.navbar ul.nav {
+	margin-right: 5%;
+}
+
+nav.navbar ul.nav li a {
+	font-size: 20px;
+	color: #dae7f1;	
+	transition: .3s;												/*lightblue*/
+}
+
+button.navbar-toggle {
+	background-color: #dae7d1;
+}
+										/*end of navbar style*/
+
+
+div.cover-img img {
+	width: 100%;
+	height: auto;
+}
+
+div.cover-img {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+}
+
+div.cover-img div.headline {
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 20%;
+	color: white;
+	border: 3px solid white;
+	padding: 30px 100px;
+}
+
+div.cover-img div.headline h1 {
+	font-size: 40px;
+}
+
+div.cover-img div.headline p {
+	font-size: 25px;
+}
+
+section#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 20%;
+	background-color: #dae7f1;
+}
+
+section#about h2 {
+	color: #386c94;
+	margin-bottom: 50px;
+}
+
+section#about p {
+	font-size: 20px;
+	color: #386c94;
+}
+								/*end of about section*/
+
+div.parallax-1 {
+	background-image: url("images/parallax-1.jpg");
+	min-height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#games {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 7%;
+	background-color: #386c94;
+}
+
+section#games h2 {
+	color: white;
+	text-align: center;
+}
+
+section#games div.holder {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+
+}
+
+section#games div.holder div.item {
+	width: 23%;
+	margin: 1%;
+	border: 10px solid #dae7f1;;
+}
+
+section#games div.holder div.item img {
+	width: 100%;
+}
+
+section#games div.holder div.item:hover {
+	transform: scale(1.1);
+	transition: .4s;
+}
+														/*end of games style*/ 
+
+div.parallax-2 {
+	background-image: url("images/parallax-2.jpg");
+	min-height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#you-tube {
+	padding: 100px 0;
+	background-image: url("images/you-tube.png");
+	background-repeat: repeat;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
+}
+
+section#you-tube div.yt-channel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+section#you-tube div.embeded {
+	border: 10px solid white;
+	margin-right: 50px;
+}
+
+iframe {
+	width: 500px;
+	height: 320px;
+}
+
+section#you-tube div.yt-channel h1 {
+	font-size: 40px;
+	margin-bottom: 50px;
+	justify-content: center;
+}
+
+section#you-tube div.yt-channel span {
+	font-size: 40px;
+	color: white;
+}
+
+section#you-tube div.yt-channel p {
+	font-size: 22px;
+	margin: 30px;
+}
+
+section#you-tube div.yt-channel div.sub {
+	font-size: 25px;
+	color: white;
+	font-weight: 700;
+	padding: 15px 20px;
+	background-color: limegreen;
+	border-radius: 10px;
+}
+
+section#you-tube div.yt-channel a {
+	text-decoration: none;
+}
+
+section#you-tube div.yt-channel a:hover {
+	transform: scale(1.07);
+	transition: 0.4s;
+}
+								/*end of you-tube section stile*/
+
+/*div.parallax-3 {
+	background-image: url("images/parallax-3.jpg");
+	min-height: 400px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+section#gallery {
+	padding: 50px 10%;
+	background-color: #dae7f1;
+}
+
+
+footer {                      
+	padding: 50px 5% 50px 5%;
+	background-color: #386c94;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer div.contacts {
+	display: flex;
+	justify-content: center;
+	color: white;
+	text-align: center;
+}
+
+footer div.soc-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+
+footer div.soc-icons a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	flex-grow: 1;
+	padding: 0;
+}
+
+footer div.soc-icons a span {
+	display: flex;
+	justify-content: center;
+	margin: 0 5%;
+	font-size: 60px;
+	width: 70px;
+	color: #dae7f1;
+	padding: 20px 50px;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+footer div.soc-icons a span:hover {
+	color: white;
+	transition: .5s;
+}
+										/*end of footer*/
+
+
+div.copyright {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 10px;
+	background-color: #004080;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+/*media queries for devices*/
+								/*1200px*/
+@media only screen and (max-width: 1200px) {
+	section#games div.holder div.item {
+		width: 31%;
+	}
+
+	section#games {
+		padding: 40px 3%;
+	}
+}
+
+
+
+
+							/*1100px*/
+@media only screen and (max-width: 1100px) {
+	nav.navbar div.navbar-header {
+		margin-left: 5%;
+	}
+
+	nav.navbar ul.nav {
+		margin-right: 3%;
+	}
+
+	section#about p {
+		font-size: 18px;
+	}
+
+	iframe {
+		width: 400px;
+		height: 250px;
+	}
+
+}
+							/*900px*/
+@media only screen and (max-width: 900px) {
+	section#you-tube {
+		padding: 50px 0;
+		flex-direction: column;
+	}
+
+	section#you-tube div.embeded {
+		margin-right: 0;
+	}
+
+	div.cover-img div.headline p {
+		display: none;
+	}
+}
+
+
+							/*800px*/
+
+@media only screen and (max-width: 800px) {
+	section#about {
+		padding: 30px 10%;
+	}s
+
+	section#about h2 {
+		margin-bottom: 30px;
+	}
+
+	section#about p {
+		font-size: 16px;
+	}
+
+	section#games div.holder div.item {
+		width: 48%;
+	}
+
+	footer div.soc-icons a span {
+		font-size: 40px;
+		width: 50px;
+		color: #dae7f1;
+		padding: 10px 30px;
+		border: 3px solid white;
+		border-radius: 5px;
+	}
+
+	div.cover-img div.headline {
+		text-align: center;
+		justify-content: center;
+		position: absolute;
+		bottom: 20%;
+		color: white;
+		border: 3px solid white;
+		padding: 30px 100px;
+	}
+}
+						
+
+
+							/*500px*/
+
+@media only screen and (max-width: 500px) {
+	section#about {
+		padding: 10px 5%;
+	}
+
+	section#about h2 {
+		margin-bottom: 10px;
+	}
+
+	iframe {
+		width: 300px;
+		height: 200px;
+	}
+
+	section#you-tube div.embeded {
+		border: 5px solid white;
+	}
+
+	
+
+	section#games div.holder div.item {
+		width: 96%;
+		margin: 2%;
+	}
+
+	div.cover-img div.headline {
+		border: none;
+	}
+}

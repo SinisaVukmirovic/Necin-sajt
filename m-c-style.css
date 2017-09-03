@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 5% 15%;
+	background-color: #386c94;
+	color: #dae7f1;
+}
+
+body h1 {
+	font-size: 60px;
+}
+
+body p {
+	font-size: 24px;
+}
+
+body p img {
+	width: 400px;
+	height: auto;
+	margin: 30px;
+}
+
+
+body p img.img-1 {
+	float: left;
+}
+
+body p img.img-2 {
+	float: right;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+	body {
+		padding: 5% 5%;
+	}
+
+	body h1 {
+		font-size: 40px;
+	}
+
+	body p {
+		font-size: 18px;
+	}
+
+	body p img {
+		width: 300px;
+		margin: 15px;
+	}
+}
